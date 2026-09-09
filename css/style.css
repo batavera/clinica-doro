@@ -331,22 +331,35 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    /* Ajusta a altura e o espaçamento interno do cabeçalho */
     .header-container {
-        height: 80px;
+        height: 72px;
+        gap: 12px;
     }
 
+    /* Reduz levemente o selo do logo no mobile para dar respiro */
     .brand-seal {
-        width: 64px;
-        height: 64px;
+        width: 52px;
+        height: 52px;
+        flex-shrink: 0;
     }
 
-    .header.scrolled .header-container {
-        height: 64px;
+    /* Botão de Agendamento Menor & Delicado no Mobile */
+    .header-actions .btn-primary {
+        padding: 7px 10px;
+        font-size: 0.62rem;
+        letter-spacing: 0.04em;
     }
 
-    .header.scrolled .brand-seal {
-        width: 46px;
-        height: 46px;
+    /* Reduz o ícone dentro do botão no mobile */
+    .header-actions .btn-primary .icon-sm {
+        width: 13px;
+        height: 13px;
+    }
+
+    .header-actions {
+        gap: 8px;
     }
 }
 
@@ -1380,35 +1393,29 @@ details.accordion-item[open] .accordion-icon {
    RESPONSIVIDADE (MEDIA QUERIES)
    ========================================================================== */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
-    .hero-grid,
-    .space-grid,
-    .contact-box {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    /* Aumenta a distância interna do cabeçalho no mobile */
+    .header-container {
+        height: 72px;
+        gap: 12px;
     }
 
-    .pillars-grid,
-    .specialties-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Reduz levemente o selo do logo no mobile para dar respiro */
+    .brand-seal {
+        width: 54px;
+        height: 54px;
+        flex-shrink: 0;
     }
 
-    .nav-desktop {
-        display: none;
+    /* Ajusta o padding e fonte do botão no mobile para encaixar perfeitamente */
+    .header-actions .btn-primary {
+        padding: 8px 12px;
+        font-size: 0.68rem;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .contact-box {
-        padding: 40px 24px;
-    }
-
-    .hero-video-card,
-    .floating-badge {
-        max-width: 100%;
+    .header-actions {
+        gap: 10px;
     }
 }
 
