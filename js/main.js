@@ -1,9 +1,9 @@
 /**
- * REVIVÁ CLÍNICA MÉDICA - Script Principal
+ * TEMPLATE BASE REUTILIZÁVEL - Script Principal
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Ícones Lucide
+    // 1. Inicializar Ícones Lucide
     if (window.lucide) {
         window.lucide.createIcons();
     }
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileNav = document.getElementById('mobile-nav');
     const appointmentForm = document.getElementById('appointment-form');
 
-    // 3. Efeito de Scroll no Header (Encolhimento do Logo)
+    // 3. Efeito de Scroll no Header
     const handleScroll = () => {
         if (header) {
             if (window.scrollY > 20) {
@@ -23,19 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 header.classList.remove('scrolled');
             }
         }
-        const phoneInput = document.getElementById('phone');
-        if (phoneInput) {
-            phoneInput.addEventListener('input', (e) => {
-                let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
-                e.target.value = !x[2] ? x[1] : `(${x[1]}) ${x[2]}` + (x[3] ? `-${x[3]}` : '');
-            });
-        }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
 
-    // 4. Menu Mobile Drawer
+    // 4. Máscara de Telefone Automática
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', (e) => {
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+            e.target.value = !x[2] ? x[1] : `(${x[1]}) ${x[2]}` + (x[3] ? `-${x[3]}` : '');
+        });
+    }
+
+    // 5. Menu Mobile Drawer
     if (menuToggle && mobileNav) {
         menuToggle.addEventListener('click', () => {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -62,35 +64,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Envio do Formulário para o WhatsApp
+    // 6. Envio do Formulário para o WhatsApp
     if (appointmentForm) {
         appointmentForm.addEventListener('submit', (event) => {
             event.preventDefault();
 
             const nameInput = document.getElementById('name');
-            const phoneInput = document.getElementById('phone');
+            const phoneVal = phoneInput ? phoneInput.value.trim() : '';
             const specialtySelect = document.getElementById('specialty');
 
             const name = nameInput ? nameInput.value.trim() : '';
-            const phone = phoneInput ? phoneInput.value.trim() : '';
             const specialty = specialtySelect ? specialtySelect.value : '';
 
-            if (!name || !phone) {
+            if (!name || !phoneVal) {
                 alert('Por favor, preencha todos os campos obrigatórios.');
                 return;
             }
 
             const message = [
-                'Olá! Gostaria de solicitar um agendamento na *Clínica Revivá*:',
+                'Olá! Gostaria de solicitar um agendamento através do site:',
                 '',
                 `👤 *Nome:* ${name}`,
-                `📱 *Contato:* ${phone}`,
-                `🩺 *Especialidade:* ${specialty}`,
+                `📱 *Contato:* ${phoneVal}`,
+                `📌 *Assunto / Serviço:* ${specialty}`,
                 '',
-                '_Mensagem enviada através do site oficial._'
+                '_Mensagem enviada pelo formulário do site._'
             ].join('\n');
 
-            const phoneClinic = '5517996471887';
+            // Insira o número do cliente (DDD + Número sem símbolos)
+            const phoneClinic = '5517997174677';
             const whatsappUrl = `https://wa.me/${phoneClinic}?text=${encodeURIComponent(message)}`;
 
             window.open(whatsappUrl, '_blank', 'noopener,noreferrer');

@@ -1,19 +1,25 @@
-/* ==========================================================================
-   RESET & DESIGN TOKENS (CLÍNICA REVIVÁ)
-   ========================================================================== */
-
 :root {
-    /* Paleta Oficial Revivá */
-    --color-petrol: #1C5253;
-    --color-petrol-dark: #123738;
-    --color-petrol-light: #286E70;
-    --color-sage: #7EA098;
-    --color-sage-light: #EBF1F0;
-    --color-sand: #FAF7F2;
-    --color-sand-dark: #F0EAE1;
-    --color-nude: #C8A882;
-    --color-charcoal: #242D2D;
-    --color-muted: #6B7A7A;
+    /* Paleta Reajustada para a Clínica Dorō (Dourado, Nude & Areia Warm) */
+    --color-primary: #C5A059;
+    /* Dourado Ouro Nobre (Substitui o Verde Escuro) */
+    --color-primary-dark: #A3803C;
+    /* Dourado Dark / Hover */
+    --color-primary-light: #D8B775;
+    /* Dourado Claro */
+    --color-accent: #B8860B;
+    /* Acento Ouro/Bronze */
+    --color-accent-light: #F7F1E5;
+    /* Fundo suave Bege/Nude */
+    --color-sand: #FAF6F0;
+    /* Off-White Quente */
+    --color-sand-dark: #F2ECE1;
+    /* Fundo Secundário Soft */
+    --color-details: #D5C3A5;
+    /* Divisores Suaves */
+    --color-charcoal: #2B2825;
+    /* Texto Principal Cinza/Marrom Escuro Leve */
+    --color-muted: #736C65;
+    /* Texto Secundário Neutro */
     --color-white: #FFFFFF;
     --color-whatsapp: #25D366;
     --color-whatsapp-dark: #1EBE5D;
@@ -25,9 +31,9 @@
     /* Transições & Sombras */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
-    --shadow-sm: 0 4px 12px rgba(28, 82, 83, 0.05);
-    --shadow-card: 0 10px 30px -10px rgba(28, 82, 83, 0.08);
-    --shadow-card-hover: 0 20px 35px -10px rgba(28, 82, 83, 0.16);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+    --shadow-card: 0 10px 30px -10px rgba(197, 160, 89, 0.12);
+    --shadow-card-hover: 0 20px 35px -10px rgba(197, 160, 89, 0.22);
 
     /* Dimensões */
     --container-max: 1200px;
@@ -77,7 +83,6 @@ select {
     font-family: inherit;
 }
 
-/* Garante que o menu fixo não tampe os títulos ao clicar nos links */
 section {
     scroll-margin-top: 100px;
 }
@@ -129,19 +134,19 @@ section {
     font-weight: 700;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--color-sage);
+    color: var(--color-accent);
     margin-bottom: 12px;
 }
 
 .tag-white {
-    color: var(--color-sage-light);
+    color: var(--color-accent-light);
 }
 
 .section-title {
     font-family: var(--font-serif);
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     line-height: 1.15;
 }
 
@@ -156,7 +161,7 @@ section {
 .divider {
     width: 48px;
     height: 2px;
-    background-color: var(--color-nude);
+    background-color: var(--color-details);
     margin: 16px auto 0;
 }
 
@@ -177,26 +182,26 @@ section {
 }
 
 .btn-primary {
-    background-color: var(--color-petrol);
+    background-color: var(--color-primary);
     color: var(--color-white);
     box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-petrol-dark);
+    background-color: var(--color-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(28, 82, 83, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline {
     background: transparent;
-    color: var(--color-petrol);
-    border-color: rgba(28, 82, 83, 0.3);
+    color: var(--color-primary);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-outline:hover {
-    background-color: rgba(28, 82, 83, 0.05);
-    border-color: var(--color-petrol);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: var(--color-primary);
 }
 
 .btn-sm {
@@ -233,7 +238,7 @@ section {
    ========================================================================== */
 
 .topbar {
-    background-color: var(--color-petrol);
+    background-color: var(--color-primary);
     color: var(--color-sand);
     font-size: 0.75rem;
     padding: 8px 0;
@@ -254,7 +259,7 @@ section {
 }
 
 .topbar .separator {
-    color: var(--color-sage);
+    color: var(--color-accent);
 }
 
 .header {
@@ -264,61 +269,59 @@ section {
     background-color: rgba(250, 247, 242, 0.96);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(28, 82, 83, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ==========================================================================
+   HEADER & LOGO AJUSTADO
+   ========================================================================== */
+
 .header-container {
-    height: 96px;
+    height: 110px;
+    /* Aumentado de 96px para dar espaço ao logo maior */
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: height 0.3s ease;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    z-index: 1100;
-}
-
 .brand-seal {
-    width: 92px;
-    height: 92px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
-    background: #FFFFFF;
-    border: 2px solid var(--color-petrol);
-    box-shadow: 0 8px 24px rgba(28, 82, 83, 0.16);
+    background-color: #DCD3C7;
+    /* Cor bege equivalente ao fundo da imagem */
+    border: 2px solid var(--color-primary);
+    box-shadow: var(--shadow-sm);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 0;
+    /* Remove qualquer espaço interno */
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    transform-origin: center center;
 }
 
 .brand-logo-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    transform: scale(1.04);
-    transition: transform 0.3s ease;
+    object-fit: cover;
+    /* Preenche todo o círculo */
+    object-position: center;
+    transform: scale(1.15);
+    /* Leve zoom para afastar as bordas da imagem do limite do círculo */
 }
 
-.header.scrolled {
-    background-color: rgba(250, 247, 242, 0.98);
-    box-shadow: 0 4px 20px rgba(28, 82, 83, 0.08);
-}
-
+/* Estado com Scroll (Header Encolhido) */
 .header.scrolled .header-container {
-    height: 70px;
+    height: 76px;
 }
 
 .header.scrolled .brand-seal {
-    width: 52px;
-    height: 52px;
-    box-shadow: 0 2px 8px rgba(28, 82, 83, 0.1);
+    width: 62px;
+    height: 62px;
+    padding: 4px;
 }
 
 @media (max-width: 768px) {
@@ -327,8 +330,8 @@ section {
     }
 
     .brand-seal {
-        width: 70px;
-        height: 70px;
+        width: 64px;
+        height: 64px;
     }
 
     .header.scrolled .header-container {
@@ -355,7 +358,7 @@ section {
 }
 
 .nav-link:hover {
-    color: var(--color-petrol);
+    color: var(--color-primary);
 }
 
 .header-actions {
@@ -368,7 +371,7 @@ section {
     display: none;
     background: none;
     border: none;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     cursor: pointer;
 }
 
@@ -376,7 +379,7 @@ section {
     display: none;
     background-color: var(--color-sand);
     padding: 24px;
-    border-bottom: 1px solid rgba(28, 82, 83, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     flex-direction: column;
     gap: 16px;
 }
@@ -392,12 +395,12 @@ section {
 }
 
 /* ==========================================================================
-   HERO SECTION & VÍDEO (LARGURA TOTAL E ENQUADRAMENTO PERFEITO)
+   HERO SECTION & VÍDEO
    ========================================================================== */
 
 .hero-section {
     padding: 60px 0 100px;
-    background: radial-gradient(circle at 80% 20%, rgba(126, 160, 152, 0.18) 0%, rgba(250, 247, 242, 0) 70%);
+    background: radial-gradient(circle at 80% 20%, rgba(126, 160, 152, 0.15) 0%, rgba(250, 247, 242, 0) 70%);
 }
 
 .hero-grid {
@@ -411,13 +414,13 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--color-sage-light);
-    border: 1px solid rgba(126, 160, 152, 0.3);
+    background: var(--color-accent-light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     padding: 6px 14px;
     border-radius: var(--radius-pill);
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-bottom: 24px;
 }
 
@@ -425,7 +428,7 @@ section {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--color-petrol);
+    background: var(--color-primary);
     animation: pulse 2s infinite;
 }
 
@@ -450,7 +453,7 @@ section {
     font-family: var(--font-serif);
     font-size: clamp(2.4rem, 4.5vw, 3.8rem);
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     line-height: 1.12;
     margin-bottom: 20px;
 }
@@ -459,7 +462,7 @@ section {
     font-style: italic;
     font-weight: 400;
     text-decoration: underline;
-    text-decoration-color: rgba(126, 160, 152, 0.6);
+    text-decoration-color: rgba(0, 0, 0, 0.2);
     text-underline-offset: 8px;
 }
 
@@ -483,7 +486,7 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-top: 24px;
-    border-top: 1px solid rgba(28, 82, 83, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     max-width: 500px;
 }
 
@@ -491,7 +494,7 @@ section {
     display: block;
     font-family: var(--font-serif);
     font-size: 1.8rem;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     line-height: 1;
 }
 
@@ -501,7 +504,6 @@ section {
     font-weight: 500;
 }
 
-/* Coluna Visual do Hero */
 .hero-visual {
     position: relative;
     display: flex;
@@ -517,7 +519,7 @@ section {
     overflow: hidden;
     border: 8px solid var(--color-white);
     box-shadow: var(--shadow-card);
-    background: var(--color-petrol-dark);
+    background: var(--color-primary-dark);
 }
 
 .video-wrapper {
@@ -541,7 +543,7 @@ section {
     left: 0;
     right: 0;
     padding: 28px 24px;
-    background: linear-gradient(to top, rgba(18, 55, 56, 0.95), rgba(18, 55, 56, 0.3) 70%, transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
     color: var(--color-white);
 }
 
@@ -549,7 +551,7 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    background: rgba(28, 82, 83, 0.85);
+    background: rgba(0, 0, 0, 0.4);
     padding: 4px 10px;
     border-radius: var(--radius-pill);
     font-size: 0.65rem;
@@ -571,7 +573,6 @@ section {
     opacity: 0.85;
 }
 
-/* Card de Prova Social Integrado Abaixo do Vídeo (Sem Sobreposição) */
 .floating-badge {
     position: static;
     margin-top: 16px;
@@ -580,25 +581,24 @@ section {
     background: var(--color-white);
     padding: 12px 18px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(28, 82, 83, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow-sm);
     display: flex;
     align-items: center;
     gap: 14px;
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    transition: transform var(--transition-fast);
 }
 
 .floating-badge:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-card);
 }
 
 .badge-icon-box {
     width: 44px;
     height: 44px;
     border-radius: var(--radius-sm);
-    background: var(--color-sage-light);
-    color: var(--color-petrol);
+    background: var(--color-accent-light);
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -614,7 +614,7 @@ section {
 .floating-title {
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
 }
 
 .floating-desc {
@@ -623,7 +623,7 @@ section {
 }
 
 /* ==========================================================================
-   MANIFESTO & PILARES
+   SOBRE & PILARES
    ========================================================================== */
 
 .manifesto-grid {
@@ -638,18 +638,13 @@ section {
     background: rgba(250, 247, 242, 0.7);
     padding: 28px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(28, 82, 83, 0.06);
-    transition: border-color var(--transition-fast);
-}
-
-.manifesto-card:hover {
-    border-color: rgba(126, 160, 152, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .manifesto-card h4 {
     font-family: var(--font-serif);
     font-size: 1.3rem;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-bottom: 8px;
 }
 
@@ -664,7 +659,7 @@ section {
     font-size: clamp(1.4rem, 3vw, 2rem);
     font-style: italic;
     font-weight: 600;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-top: 56px;
 }
 
@@ -678,7 +673,7 @@ section {
     background: var(--color-white);
     padding: 32px 20px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(28, 82, 83, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow-card);
     text-align: center;
 }
@@ -687,8 +682,8 @@ section {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: var(--color-sage-light);
-    color: var(--color-petrol);
+    background-color: var(--color-accent-light);
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -701,17 +696,16 @@ section {
     height: 26px;
     stroke: currentColor;
     stroke-width: 1.8;
-    display: block;
 }
 
 .pillar-card:hover .pillar-icon {
-    background-color: var(--color-petrol);
+    background-color: var(--color-primary);
     color: var(--color-white);
     transform: scale(1.08);
 }
 
 /* ==========================================================================
-   ESPECIALIDADES
+   SERVIÇOS / ESPECIALIDADES
    ========================================================================== */
 
 .specialties-grid {
@@ -725,7 +719,7 @@ section {
     background: var(--color-sand);
     border-radius: var(--radius-lg);
     padding: 36px;
-    border: 1px solid rgba(28, 82, 83, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow-card);
     display: flex;
     flex-direction: column;
@@ -734,7 +728,7 @@ section {
 }
 
 .specialty-card:hover {
-    border-color: var(--color-sage);
+    border-color: var(--color-accent);
     transform: translateY(-4px);
     box-shadow: var(--shadow-card-hover);
 }
@@ -743,20 +737,18 @@ section {
     width: 54px;
     height: 54px;
     border-radius: var(--radius-sm);
-    background-color: var(--color-petrol);
-    color: var(--color-sage-light);
+    background-color: var(--color-primary);
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    transition: all var(--transition-fast);
 }
 
 .icon-specialty {
     width: 26px;
     height: 26px;
     stroke: currentColor;
-    display: block;
 }
 
 .icon-arrow {
@@ -764,12 +756,6 @@ section {
     height: 16px;
     stroke: currentColor;
     transition: transform var(--transition-fast);
-}
-
-.specialty-card:hover .specialty-icon {
-    background-color: var(--color-sage);
-    color: var(--color-petrol-dark);
-    transform: scale(1.05);
 }
 
 .specialty-card:hover .icon-arrow {
@@ -786,10 +772,10 @@ section {
 .tags span {
     font-size: 0.68rem;
     background: var(--color-white);
-    color: var(--color-petrol);
+    color: var(--color-primary);
     padding: 4px 10px;
     border-radius: 4px;
-    border: 1px solid rgba(28, 82, 83, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     font-weight: 500;
 }
 
@@ -799,20 +785,15 @@ section {
     justify-content: space-between;
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     padding-top: 16px;
-    border-top: 1px solid rgba(28, 82, 83, 0.08);
-    transition: color var(--transition-fast);
-}
-
-.card-action:hover {
-    color: var(--color-sage);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================================================================
-   EQUIPE CENTRALIZADA
+   EQUIPE
    ========================================================================== */
 
 .team-showcase-centered {
@@ -830,7 +811,6 @@ section {
 }
 
 .team-image-frame {
-    position: relative;
     border-radius: var(--radius-xl);
     overflow: hidden;
     border: 8px solid var(--color-white);
@@ -841,14 +821,14 @@ section {
 .team-full-img {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
 }
 
 .team-values-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    /* Altera para 4 colunas em telas grandes */
+    gap: 20px;
     width: 100%;
     margin-bottom: 40px;
     text-align: left;
@@ -856,26 +836,28 @@ section {
 
 .team-value-card {
     background: var(--color-white);
-    padding: 28px 22px;
+    padding: 24px 20px;
     border-radius: var(--radius-md);
-    border: 1px solid rgba(28, 82, 83, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: var(--shadow-card);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    /* Garante que todos fiquem exatamente com a mesma altura */
 }
 
 .team-value-icon {
     width: 30px;
     height: 30px;
-    color: var(--color-sage);
+    color: var(--color-accent);
     margin-bottom: 14px;
 }
 
 .team-value-card h4 {
     font-size: 0.95rem;
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-bottom: 8px;
 }
 
@@ -892,7 +874,7 @@ section {
 }
 
 /* ==========================================================================
-   ESPAÇO / HOSPITALIDADE
+   ESPAÇO / ESTRUTURA
    ========================================================================== */
 
 .space-grid {
@@ -909,6 +891,69 @@ section {
     gap: 24px;
 }
 
+/* ==========================================================================
+   MOSAICO DE FOTOS (NOSSO ESPAÇO)
+   ========================================================================== */
+
+.space-mosaic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+
+.mosaic-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mosaic-card {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--color-sand-dark);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Tamanhos Alternados (Proporções das Imagens) */
+.mosaic-card.card-tall {
+    aspect-ratio: 3 / 4;
+    /* Card mais alto */
+}
+
+.mosaic-card.card-short {
+    aspect-ratio: 4 / 3;
+    /* Card mais retangular/baixo */
+}
+
+.mosaic-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.mosaic-card:hover .mosaic-img {
+    transform: scale(1.05);
+    /* Efeito elegante de zoom leve ao passar o mouse */
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 640px) {
+    .space-mosaic {
+        grid-template-columns: 1fr;
+    }
+
+    .mosaic-card.card-tall,
+    .mosaic-card.card-short {
+        aspect-ratio: 16 / 10;
+        /* Em telas pequenas, padroniza para não ficar gigante na rolagem */
+    }
+}
+
 .feature-item {
     display: flex;
     align-items: flex-start;
@@ -919,32 +964,24 @@ section {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--color-sage-light);
-    color: var(--color-petrol);
+    background-color: var(--color-accent-light);
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: all var(--transition-fast);
 }
 
 .icon-feature {
     width: 20px;
     height: 20px;
     stroke: currentColor;
-    display: block;
-}
-
-.feature-item:hover .feature-icon {
-    background-color: var(--color-petrol);
-    color: var(--color-white);
-    transform: scale(1.08);
 }
 
 .feature-item h4 {
     font-size: 0.9rem;
     font-weight: 700;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-bottom: 2px;
 }
 
@@ -989,7 +1026,7 @@ section {
 }
 
 /* ==========================================================================
-   FAQ NATIVO (HTML5 DETAILS/SUMMARY - SEM DEPENDÊNCIA DE JS)
+   FAQ NATIVO (HTML5 DETAILS/SUMMARY)
    ========================================================================== */
 
 .accordion {
@@ -1002,35 +1039,30 @@ section {
 details.accordion-item {
     background: var(--color-white);
     border-radius: var(--radius-md);
-    border: 1px solid rgba(28, 82, 83, 0.08);
-    box-shadow: 0 4px 14px rgba(28, 82, 83, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
     overflow: hidden;
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 details.accordion-item[open] {
-    border-color: var(--color-sage);
+    border-color: var(--color-accent);
     box-shadow: var(--shadow-card);
 }
 
 summary.accordion-button {
     width: 100%;
     padding: 22px 28px;
-    background: none;
-    border: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: var(--font-serif);
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--color-petrol);
-    text-align: left;
+    color: var(--color-primary);
     cursor: pointer;
     outline: none;
     list-style: none;
     user-select: none;
-    -webkit-user-select: none;
 }
 
 summary::-webkit-details-marker,
@@ -1041,15 +1073,13 @@ summary::marker {
 .accordion-icon {
     width: 20px;
     height: 20px;
-    color: var(--color-sage);
-    flex-shrink: 0;
-    pointer-events: none;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
 }
 
 details.accordion-item[open] .accordion-icon {
     transform: rotate(180deg);
-    color: var(--color-petrol);
+    color: var(--color-primary);
 }
 
 .accordion-panel {
@@ -1060,27 +1090,14 @@ details.accordion-item[open] .accordion-icon {
     font-size: 0.9rem;
     color: var(--color-muted);
     line-height: 1.65;
-    font-weight: 400;
-    margin: 0;
-}
-
-.faq-link {
-    color: var(--color-petrol);
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: var(--color-sage);
-}
-
-.faq-link:hover {
-    color: var(--color-petrol-dark);
 }
 
 /* ==========================================================================
-   CONTATO & FORMULÁRIO
+   FORMULÁRIO & CONTATO
    ========================================================================== */
 
 .contact-box {
-    background: var(--color-petrol);
+    background: var(--color-primary);
     border-radius: var(--radius-xl);
     padding: 64px;
     color: var(--color-white);
@@ -1116,7 +1133,7 @@ details.accordion-item[open] .accordion-icon {
     align-items: center;
     gap: 12px;
     font-size: 0.85rem;
-    color: var(--color-sage-light);
+    color: var(--color-sand);
 }
 
 .contact-form-wrapper {
@@ -1137,7 +1154,7 @@ details.accordion-item[open] .accordion-icon {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-petrol);
+    color: var(--color-primary);
     margin-bottom: 6px;
 }
 
@@ -1146,19 +1163,19 @@ details.accordion-item[open] .accordion-icon {
     padding: 14px 16px;
     font-size: 0.875rem;
     border-radius: var(--radius-sm);
-    border: 1px solid rgba(28, 82, 83, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     background: rgba(250, 247, 242, 0.6);
     outline: none;
     transition: border-color var(--transition-fast);
 }
 
 .form-control:focus {
-    border-color: var(--color-petrol);
+    border-color: var(--color-primary);
     background: var(--color-white);
 }
 
 /* ==========================================================================
-   FOTO DO INSTAGRAM
+   INSTAGRAM / MÍDIA
    ========================================================================== */
 
 .instagram-center-box {
@@ -1184,18 +1201,22 @@ details.accordion-item[open] .accordion-icon {
     height: auto;
     max-height: 480px;
     object-fit: cover;
-    display: block;
 }
 
 /* ==========================================================================
    FOOTER & WHATSAPP FLUTUANTE
    ========================================================================== */
 
+/* ==========================================================================
+   FOOTER (RODAPÉ) - CONTRASTE CORRIGIDO
+   ========================================================================== */
+
 .footer {
-    background-color: var(--color-petrol-dark);
-    color: rgba(255, 255, 255, 0.75);
+    background-color: #2D2823;
+    /* Fundo café/marrom escuro luxuoso que realça o dourado e o branco */
+    color: #FAF6F0;
     padding: 56px 0 32px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(213, 195, 165, 0.2);
 }
 
 .footer-top {
@@ -1203,7 +1224,7 @@ details.accordion-item[open] .accordion-icon {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 36px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     gap: 24px;
 }
 
@@ -1215,14 +1236,13 @@ details.accordion-item[open] .accordion-icon {
 }
 
 .footer-logo-img {
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
     background: #FFFFFF;
-    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border: 1.5px solid var(--color-primary);
     padding: 2px;
-    flex-shrink: 0;
 }
 
 .footer-brand-text {
@@ -1232,47 +1252,48 @@ details.accordion-item[open] .accordion-icon {
 
 .footer-brand-title {
     font-family: var(--font-serif);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     color: #FFFFFF;
+    /* Texto principal em branco total */
     line-height: 1;
 }
 
 .footer-brand-subtitle {
-    font-size: 0.52rem;
-    letter-spacing: 0.28em;
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--color-sage);
+    color: var(--color-primary-light);
+    /* Dourado claro legível sobre o escuro */
     font-weight: 600;
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .footer-nav {
     display: flex;
     align-items: center;
     gap: 28px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 .footer-nav a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #FAF6F0;
+    /* Brilhante e legível */
+    font-weight: 500;
     transition: color var(--transition-fast);
 }
 
 .footer-nav a:hover {
-    color: #FFFFFF;
+    color: var(--color-primary-light);
 }
 
 .instagram-link {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: var(--color-sage) !important;
-}
-
-.instagram-link:hover {
-    color: #FFFFFF !important;
+    color: var(--color-primary-light) !important;
+    /* Dourado visível para o link do Instagram */
 }
 
 .footer-bottom {
@@ -1280,8 +1301,9 @@ details.accordion-item[open] .accordion-icon {
     justify-content: space-between;
     align-items: center;
     padding-top: 28px;
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.8rem;
+    color: rgba(250, 246, 240, 0.7);
+    /* Off-white com boa visibilidade */
 }
 
 .whatsapp-float {
@@ -1395,5 +1417,43 @@ details.accordion-item[open] .accordion-icon {
     .footer-nav {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+.btn-instagram {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: all var(--transition-fast);
+}
+
+.btn-instagram:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Link Interativo na Topbar */
+.topbar-link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+.topbar-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Responsividade: oculta o texto do botão do Instagram em telas médias/menores para não apertar o menu */
+@media (max-width: 992px) {
+    .btn-instagram span {
+        display: none;
+    }
+
+    .btn-instagram {
+        padding: 10px;
+        border-radius: 50%;
     }
 }

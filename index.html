@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Revivá Clínica Médica | Medicina Integrativa e Acolhimento</title>
+    <title>Clínica Dorō | Estética & Saúde Integral</title>
     <meta name="description"
-        content="Especialistas unidas por um propósito: cuidar da sua saúde de forma completa, humana e integrada." />
-
+        content="Clínica Dorō - Beleza que liberta. Tratamentos estéticos, dermatofuncionais, depilação a LED e emagrecimento com atendimento personalizado." />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/icons/logo.png" />
 
-    <!-- Open Graph / Preview para WhatsApp e Redes Sociais -->
+    <!-- Open Graph / Preview para WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Revivá Clínica Médica | Medicina Integrativa & Acolhimento" />
+    <meta property="og:title" content="Clínica Dorō | Beleza que Liberta" />
     <meta property="og:description"
-        content="Especialistas unidas em Endocrinologia, Dermatologia, Psiquiatria, Hematologia e Geriatria em Catanduva." />
-    <meta property="og:image" content="assets/img/equipe.jpg" />
-    <meta property="og:url" content="https://reviva-clinica.vercel.app/" />
+        content="Sua saúde e beleza cuidadas por profissionais de excelência. Agende seu atendimento." />
+    <meta property="og:image" content="assets/img/og-preview.jpg" />
+    <meta property="og:url" content="https://clinicadoro.com.br/" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,38 +42,47 @@
         <div class="container topbar-content">
             <span class="topbar-item">
                 <i data-lucide="sparkles" class="icon-sm"></i>
-                Atendimento médico humanizado com hora marcada
+                Atendimento Personalizado com Hora Marcada
             </span>
             <span class="separator">•</span>
-            <span class="topbar-item">Consultas integrativas com tempo dedicado a você</span>
+            <a href="https://www.instagram.com/clinicadoro_/" target="_blank" class="topbar-item topbar-link">
+                <i data-lucide="instagram" class="icon-sm"></i>
+                Siga @clinicadoro_
+            </a>
         </div>
     </aside>
 
     <!-- Header / Navegação -->
-    <!-- Header / Navegação -->
     <header id="main-header" class="header">
         <div class="container header-container">
 
-            <!-- Logo Imponente em Formato de Selo -->
-            <a href="#" class="brand" aria-label="Página inicial da Clínica Revivá">
+            <a href="#" class="brand" aria-label="Página inicial">
                 <div class="brand-seal">
-                    <img src="assets/icons/logo.png" alt="Clínica Revivá" class="brand-logo-img" />
+                    <img src="assets/icons/logo.png" alt="Logo Clínica Dorō" class="brand-logo-img" />
                 </div>
             </a>
 
             <nav class="nav-desktop">
-                <a href="#manifesto" class="nav-link">O que é Revivá</a>
-                <a href="#especialidades" class="nav-link">Especialidades</a>
-                <a href="#equipe" class="nav-link">Corpo Clínico</a>
+                <a href="#sobre" class="nav-link">Sobre Nós</a>
+                <a href="#servicos" class="nav-link">Procedimentos</a>
+                <a href="#equipe" class="nav-link">Equipe</a>
                 <a href="#espaco" class="nav-link">Nosso Espaço</a>
                 <a href="#faq" class="nav-link">Dúvidas</a>
             </nav>
 
             <div class="header-actions">
-                <a href="https://wa.me/5517996471887?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20na%20Clínica%20Revivá."
-                    target="_blank" class="btn btn-primary btn-sm">
+                <!-- Botão do Instagram adicionado -->
+                <a href="https://www.instagram.com/clinicadoro_/" target="_blank" class="btn btn-instagram btn-sm"
+                    aria-label="Seguir no Instagram">
+                    <i data-lucide="instagram" class="icon-sm"></i>
+                    <span>Seguir no Instagram</span>
+                </a>
+
+                <!-- Botão de Agendamento existente -->
+                <a href="https://wa.me/5500999999999?text=Olá,%20gostaria%20de%20mais%20informações." target="_blank"
+                    class="btn btn-primary btn-sm">
                     <i data-lucide="calendar" class="icon-sm"></i>
-                    <span>Agendar Consulta</span>
+                    <span>Agendar Atendimento</span>
                 </a>
 
                 <button id="menu-toggle" class="menu-toggle" aria-label="Abrir Menu Mobile" aria-expanded="false">
@@ -85,45 +94,43 @@
 
         <!-- Mobile Drawer -->
         <div id="mobile-nav" class="mobile-nav">
-            <a href="#manifesto" class="mobile-nav-link">O que é Revivá</a>
-            <a href="#especialidades" class="mobile-nav-link">Especialidades</a>
-            <a href="#equipe" class="mobile-nav-link">Corpo Clínico</a>
+            <a href="#sobre" class="mobile-nav-link">Sobre Nós</a>
+            <a href="#servicos" class="mobile-nav-link">Procedimentos</a>
+            <a href="#equipe" class="mobile-nav-link">Equipe</a>
             <a href="#espaco" class="mobile-nav-link">Nosso Espaço</a>
             <a href="#faq" class="mobile-nav-link">Dúvidas</a>
-            <a href="https://wa.me/5517996471887" class="btn btn-primary btn-full">Agendar via WhatsApp</a>
+            <a href="https://wa.me/5517997174677" class="btn btn-primary btn-full">Agendar via WhatsApp</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section com Vídeo Tour Autoplay -->
+        <!-- Hero Section -->
         <section class="hero-section">
             <div class="container hero-grid">
 
                 <div class="hero-content">
                     <div class="badge">
                         <span class="badge-dot"></span>
-                        Medicina Integrativa • Corpo e Mente em Equilíbrio
+                        Clínica Dorō • Beleza que Liberta
                     </div>
 
                     <h1 class="hero-title">
-                        Cuidado médico além dos sintomas: uma medicina que olha para você <span class="highlight">por
-                            inteiro</span>.
+                        Tratamentos exclusivos para realçar sua <span class="highlight">beleza natural</span>
                     </h1>
 
                     <p class="hero-description">
-                        Especialistas unidas em Endocrinologia, Dermatologia, Psiquiatria, Hematologia, Geriatria e
-                        Longevidade. Um espaço de saúde planejado para restaurar sua vitalidade com ciência e
-                        acolhimento.
+                        Unimos ciência, segurança e atendimento humanizado para transformar sua autoestima com
+                        resultados progressivos e naturais.
                     </p>
 
                     <div class="hero-actions">
-                        <a href="https://wa.me/5517996471887?text=Olá,%20gostaria%20de%20informações%20sobre%20agendamentos."
+                        <a href="https://wa.me/5517997174677?text=Olá,%20gostaria%20de%20fazer%20uma%20avaliação."
                             target="_blank" class="btn btn-primary btn-lg">
                             <i data-lucide="message-circle" class="icon-md"></i>
                             <span>Falar no WhatsApp</span>
                         </a>
-                        <a href="#especialidades" class="btn btn-outline btn-lg">
-                            <span>Ver Especialidades</span>
+                        <a href="#servicos" class="btn btn-outline btn-lg">
+                            <span>Ver Procedimentos</span>
                             <i data-lucide="arrow-down" class="icon-sm"></i>
                         </a>
                     </div>
@@ -131,53 +138,46 @@
                     <div class="trust-indicators">
                         <div class="trust-item">
                             <strong>100%</strong>
-                            <span>Especialistas Tituladas (RQE)</span>
+                            <span>Segurança Técnica</span>
                         </div>
                         <div class="trust-item">
-                            <strong>6+</strong>
-                            <span>Áreas Integradas de Cuidado</span>
+                            <strong>Equipe</strong>
+                            <span>Multidisciplinar</span>
                         </div>
                         <div class="trust-item">
                             <strong>1 a 1</strong>
-                            <span>Tempo Dedicado de Consulta</span>
+                            <span>Atendimento Exclusivo</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Vídeo Tour em Autoplay -->
+                <!-- Hero Visual Tour/Vídeo -->
                 <div class="hero-visual">
                     <div class="hero-video-card">
                         <div class="video-wrapper">
                             <video autoplay muted loop playsinline class="hero-video" preload="auto">
                                 <source src="assets/video/tour.mp4" type="video/mp4" />
-                                Seu navegador não suporta vídeos HTML5.
                             </video>
 
                             <div class="hero-card-overlay">
                                 <span class="overlay-tag">
-                                    <i data-lucide="play" class="icon-xs"></i> Tour Virtual
+                                    <i data-lucide="sparkles" class="icon-xs"></i> Nosso Espaço
                                 </span>
-                                <h3>Espaço planejado para acolher corpo e mente.</h3>
-                                <p>Ambientes com arquitetura biofílica, café especial e privacidade.</p>
+                                <h3>Estrutura Acolhedora</h3>
+                                <p>Ambiente planejado para proporcionar conforto em cada atendimento.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card Flutuante de Confiança com SVG Direto -->
+                    <!-- Badge Flutuante -->
                     <div class="floating-badge">
                         <div class="badge-icon-box">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="#1C5253" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                style="width: 22px; height: 22px; display: block;">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                                <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" />
-                            </svg>
+                            <i data-lucide="award" class="icon-md"></i>
                         </div>
                         <div>
                             <div class="stars">★★★★★</div>
-                            <p class="floating-title">Atendimento Humanizado</p>
-                            <p class="floating-desc">Conforto e acolhimento em cada detalhe</p>
+                            <p class="floating-title">Excelência no Atendimento</p>
+                            <p class="floating-desc">Cuidado do primeiro contato ao pós-procedimento</p>
                         </div>
                     </div>
                 </div>
@@ -185,293 +185,144 @@
             </div>
         </section>
 
-        <!-- Manifesto Section -->
-        <section id="manifesto" class="section section-white">
+        <!-- Seção Sobre / Propósito -->
+        <section id="sobre" class="section section-white">
             <div class="container text-center">
 
-                <span class="section-tag">Propósito Revivá</span>
-                <h2 class="section-title">O que significa Revivá?</h2>
+                <span class="section-tag">Nossa Essência</span>
+                <h2 class="section-title">Por que escolher a Clínica Dorō?</h2>
                 <div class="divider"></div>
 
                 <div class="manifesto-grid">
                     <div class="manifesto-card">
-                        <h4>🌿 Voltar a se sentir bem</h4>
-                        <p>Em meio à rotina acelerada, reencontrar vitalidade, clareza e disposição sustentável.</p>
+                        <h4>✨ Equipe Especializada</h4>
+                        <p>Profissionais qualificadas unindo conhecimento técnico e visão integrada da saúde
+                            estético-funcional.</p>
                     </div>
                     <div class="manifesto-card">
-                        <h4>🩺 Cuidado além dos sintomas</h4>
-                        <p>Não focamos apenas em atenuar queixas isoladas: investigamos as origens metabólicas,
-                            hormonais e emocionais.</p>
+                        <h4>🎯 Cuidado Personalizado</h4>
+                        <p>Avaliação individual detalhada para recomendar os protocolos adequados para seus objetivos.
+                        </p>
                     </div>
                     <div class="manifesto-card">
-                        <h4>✨ Acolhimento integral</h4>
-                        <p>Estrutura pensada para neutralizar a frieza hospitalar e proporcionar tranquilidade em cada
-                            etapa.</p>
+                        <h4>🛡️ Beleza com Segurança</h4>
+                        <p>Procedimentos guiados por padrões rígidos de biossegurança, conforto e eficiência.</p>
                     </div>
                     <div class="manifesto-card">
-                        <h4>🤝 Medicina humana e presente</h4>
-                        <p>Consultas sem pressa, relação médico-paciente transparente e protocolos individualizados.</p>
+                        <h4>🤝 Atendimento Humanizado</h4>
+                        <p>Escuta ativa e acompanhamento contínuo em todas as fases do tratamento.</p>
                     </div>
                 </div>
 
                 <blockquote class="manifesto-quote">
-                    “Seu corpo merece muito mais do que apenas sobreviver.”
+                    Realce sua beleza. Transforme sua autoestima. Cuide de você.
                 </blockquote>
 
             </div>
         </section>
 
-        <!-- Pilares Section -->
-        <!-- Pilares Section com Ícones Oficiais -->
+        <!-- Pilares -->
         <section class="section section-sand-dark">
             <div class="container">
                 <div class="pillars-grid">
 
-                    <!-- 1. INTEGRATIVA (Folha Orgânica) -->
                     <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-pillar">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                            </svg>
-                        </div>
-                        <h3>INTEGRATIVA</h3>
-                        <p>Visão global da sua fisiologia, sono, hábitos e saúde mental.</p>
+                        <div class="pillar-icon"><i data-lucide="check-circle" class="icon-pillar"></i></div>
+                        <h3>QUALIDADE</h3>
+                        <p>Técnicas modernas e equipamentos selecionados para entregas com alto padrão técnico.</p>
                     </div>
 
-                    <!-- 2. ACOLHIMENTO (Coração & Pulso) -->
                     <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-pillar">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                                <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" />
-                            </svg>
-                        </div>
-                        <h3>ACOLHIMENTO</h3>
-                        <p>Escuta atenta e empática em um ambiente sereno e discreto.</p>
+                        <div class="pillar-icon"><i data-lucide="heart" class="icon-pillar"></i></div>
+                        <h3>ATENDIMENTO</h3>
+                        <p>Acompanhamento próximo e focado nas particularidades da sua pele e corpo.</p>
                     </div>
 
-                    <!-- 3. EXCELÊNCIA (Medalha de Qualidade) -->
                     <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-pillar">
-                                <circle cx="12" cy="8" r="6" />
-                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
-                            </svg>
-                        </div>
-                        <h3>EXCELÊNCIA</h3>
-                        <p>Médicas tituladas com rigor técnico e constante atualização científica.</p>
+                        <div class="pillar-icon"><i data-lucide="zap" class="icon-pillar"></i></div>
+                        <h3>AGILIDADE</h3>
+                        <p>Pontualidade nos agendamentos e otimização do seu tempo com sessões organizadas.</p>
                     </div>
 
-                    <!-- 4. PROPÓSITO (Bússola / Direção de Saúde) -->
                     <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-pillar">
-                                <circle cx="12" cy="12" r="10" />
-                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
-                            </svg>
-                        </div>
-                        <h3>PROPÓSITO</h3>
-                        <p>Transformar saúde em longevidade ativa, bem-estar e autonomia.</p>
+                        <div class="pillar-icon"><i data-lucide="shield" class="icon-pillar"></i></div>
+                        <h3>CONFIANÇA</h3>
+                        <p>Transparência em todas as orientações, do diagnóstico ao protocolo de manutenção.</p>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- Especialidades Section -->
-        <!-- Especialidades Section com Ícones Vetoriais Nativos -->
-        <section id="especialidades" class="section section-white">
+        <!-- Serviços / Especialidades -->
+        <section id="servicos" class="section section-white">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tag">Áreas Médicas de Atuação</span>
-                    <h2 class="section-title">Especialidades para o seu bem-estar</h2>
-                    <p class="section-desc">Cuidado interdisciplinar desenhado para cada ciclo da sua saúde.</p>
+                    <span class="section-tag">Nossa Cartela</span>
+                    <h2 class="section-title">Procedimentos Realizados</h2>
+                    <p class="section-desc">Protocolos corporais, faciais e tecnologias avançadas para cuidados
+                        contínuos.</p>
                 </div>
 
                 <div class="specialties-grid">
 
-                    <!-- 1. Endocrinologia & Metabologia (Metabolismo / Pulso Vital) -->
+                    <!-- Depilação a LED -->
                     <article class="specialty-card">
                         <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                </svg>
-                            </div>
-                            <h3>Endocrinologia & Metabologia</h3>
-                            <p>Equilíbrio hormonal, modulação metabólica, emagrecimento consciente com preservação
-                                muscular, tireoide e diabetes.</p>
+                            <div class="specialty-icon"><i data-lucide="sparkles" class="icon-specialty"></i></div>
+                            <h3>Depilação a LED</h3>
+                            <p>Tecnologia com aplicação indolore para redução duradoura e eficaz dos pelos de forma
+                                rápida, prática e segura.</p>
                             <div class="tags">
-                                <span>Metabolismo</span>
-                                <span>Hormônios</span>
-                                <span>Energia</span>
+                                <span>Indolor</span>
+                                <span>Redução Duradoura</span>
+                                <span>Seguro</span>
                             </div>
                         </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20agendar%20uma%20consulta%20em%20Endocrinologia."
+                        <a href="https://wa.me/5517997174677?text=Gostaria%20de%20informações%20sobre%20Depilação%20a%20LED."
                             class="card-action">
-                            <span>Agendar Endocrinologista</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
+                            <span>Saber Mais</span>
+                            <i data-lucide="arrow-right" class="icon-arrow"></i>
                         </a>
                     </article>
 
-                    <!-- 2. Dermatologia (Pele / Brilho Natural) -->
+                    <!-- Emagrecimento & Contorno -->
                     <article class="specialty-card">
                         <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path
-                                        d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                                    <path d="M5 3v4M3 5h4M19 17v4M17 19h4" />
-                                </svg>
-                            </div>
-                            <h3>Dermatologia</h3>
-                            <p>Saúde da pele, tratamentos clínicos e procedimentos estéticos sutis que valorizam sua
-                                harmonia natural.</p>
+                            <div class="specialty-icon"><i data-lucide="activity" class="icon-specialty"></i></div>
+                            <h3>Métodos de Emagrecimento</h3>
+                            <p>Estratégias para redução de medidas e gordura localizada com sessões rápidas e resultados
+                                progressivos.</p>
                             <div class="tags">
-                                <span>Pele & Cabelos</span>
+                                <span>Redução de Medidas</span>
+                                <span>Gordura Localizada</span>
                                 <span>Autoestima</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5517997174677?text=Gostaria%20de%20informações%20sobre%20Métodos%20de%20Emagrecimento."
+                            class="card-action">
+                            <span>Saber Mais</span>
+                            <i data-lucide="arrow-right" class="icon-arrow"></i>
+                        </a>
+                    </article>
+
+                    <!-- Anti Flacidez -->
+                    <article class="specialty-card">
+                        <div class="specialty-header">
+                            <div class="specialty-icon"><i data-lucide="shield-check" class="icon-specialty"></i></div>
+                            <h3>Procedimentos Anti Flacidez</h3>
+                            <p>Tratamentos focados em rejuvenescimento da pele, sustentação e definição dos contornos
+                                corporais e faciais.</p>
+                            <div class="tags">
+                                <span>Pele Firme</span>
+                                <span>Sustentação</span>
                                 <span>Rejuvenescimento</span>
                             </div>
                         </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20agendar%20uma%20consulta%20em%20Dermatologia."
+                        <a href="https://wa.me/5517997437339?text=Gostaria%20de%20informações%20sobre%20Tratamentos%20Anti%20Flacidez."
                             class="card-action">
-                            <span>Agendar Dermatologista</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </article>
-
-                    <!-- 3. Psiquiatria & Saúde Mental (Mente / Cérebro) -->
-                    <article class="specialty-card">
-                        <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path
-                                        d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z" />
-                                    <path
-                                        d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z" />
-                                </svg>
-                            </div>
-                            <h3>Psiquiatria & Saúde Mental</h3>
-                            <p>Abordagem cuidadosa e sem tabus para ansiedade, depressão, insônia e esgotamento
-                                emocional.</p>
-                            <div class="tags">
-                                <span>Ansiedade</span>
-                                <span>Qualidade do Sono</span>
-                                <span>Leveza</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20agendar%20uma%20consulta%20em%20Psiquiatria."
-                            class="card-action">
-                            <span>Agendar Psiquiatra</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </article>
-
-                    <!-- 4. Hematologia (Gota de Sangue / Vitalidade) -->
-                    <article class="specialty-card">
-                        <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path
-                                        d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
-                                </svg>
-                            </div>
-                            <h3>Hematologia</h3>
-                            <p>Investigação especializada e tratamento de anemias complexas, distúrbios da coagulação e
-                                imunidade.</p>
-                            <div class="tags">
-                                <span>Investigação</span>
-                                <span>Precisão</span>
-                                <span>Vitalidade</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20agendar%20uma%20consulta%20em%20Hematologia."
-                            class="card-action">
-                            <span>Agendar Hematologista</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </article>
-
-                    <!-- 5. Geriatria & Longevidade (Longevidade / Cuidado) -->
-                    <article class="specialty-card">
-                        <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
-                            </div>
-                            <h3>Geriatria & Longevidade</h3>
-                            <p>Foco na independência física, saúde cognitiva e longevidade ativa para viver com
-                                plenitude em todas as idades.</p>
-                            <div class="tags">
-                                <span>Autonomia</span>
-                                <span>Prevenção</span>
-                                <span>Qualidade de Vida</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20agendar%20uma%20consulta%20em%20Geriatria."
-                            class="card-action">
-                            <span>Agendar Geriatra</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </article>
-
-                    <!-- 6. Núcleo Alento (Acolhimento / Conforto) -->
-                    <article class="specialty-card">
-                        <div class="specialty-header">
-                            <div class="specialty-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-specialty">
-                                    <path
-                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                                </svg>
-                            </div>
-                            <h3>Núcleo Alento</h3>
-                            <p>Cuidados paliativos com suporte coordenado, alívio de sintomas, dignidade e apoio
-                                humanizado integral aos familiares.</p>
-                            <div class="tags">
-                                <span>Dignidade</span>
-                                <span>Conforto</span>
-                                <span>Acolhimento</span>
-                            </div>
-                        </div>
-                        <a href="https://wa.me/5517996471887?text=Gostaria%20de%20informações%20sobre%20o%20Núcleo%20Alento."
-                            class="card-action">
-                            <span>Conhecer o Núcleo</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="icon-arrow">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
+                            <span>Saber Mais</span>
+                            <i data-lucide="arrow-right" class="icon-arrow"></i>
                         </a>
                     </article>
 
@@ -479,55 +330,59 @@
             </div>
         </section>
 
-        <!-- Corpo Clínico / Equipe Unificada Centralizada -->
+        <!-- Equipe -->
         <section id="equipe" class="section section-sand">
             <div class="container">
                 <div class="team-showcase-centered">
 
                     <div class="section-header text-center">
-                        <span class="section-tag">Cuidado Multidisciplinar</span>
-                        <h2 class="section-title">Especialistas unidas por um único propósito</h2>
-                        <p class="section-desc">
-                            Reunimos médicas de diferentes especialidades que atuam em constante diálogo clínico para
-                            cuidar da sua saúde de forma completa e integrada.
-                        </p>
+                        <span class="section-tag">Corpo Técnico</span>
+                        <h2 class="section-title">Especialistas Clínica Dorō</h2>
+                        <p class="section-desc">Profissionais qualificadas que unem conhecimento e responsabilidade
+                            técnica para atender você.</p>
                     </div>
 
                     <div class="team-image-container">
                         <div class="team-image-frame">
-                            <img src="assets/img/equipe.jpg" alt="Equipe de Especialistas da Clínica Revivá"
-                                class="team-full-img" />
+                            <img src="assets/img/equipe.png" alt="Equipe Clínica Dorō" class="team-full-img" />
                         </div>
                     </div>
 
                     <div class="team-values-grid">
                         <div class="team-value-card">
-                            <div class="team-value-icon"><i data-lucide="check-circle-2"></i></div>
-                            <h4>Discussão Clínica Conjunta</h4>
-                            <p>Casos complexos contam com a visão integrada entre endocrinologia, dermatologia,
-                                psiquiatria, hematologia e geriatria.</p>
+                            <div class="team-value-icon"><i data-lucide="user-check"></i></div>
+                            <h4>Thainá Meneguesso</h4>
+                            <p><strong>Fisioterapeuta Dermatofuncional</strong><br />Especialista na recuperação
+                                funcional e tratamentos dermato-intensivos corporais e faciais.</p>
                         </div>
 
                         <div class="team-value-card">
-                            <div class="team-value-icon"><i data-lucide="check-circle-2"></i></div>
-                            <h4>Médicas Tituladas (RQE)</h4>
-                            <p>Profissionais com registro oficial de qualificação nos órgãos competentes (CFM, AMB,
-                                SBEM) e constante atualização científica.</p>
+                            <div class="team-value-icon"><i data-lucide="user-check"></i></div>
+                            <h4>Luana Rocha</h4>
+                            <p><strong>Esteticista & Cosmetóloga</strong><br />Especialista em saúde estética da pele,
+                                limpeza profunda e tratamentos faciais avançados.</p>
                         </div>
 
                         <div class="team-value-card">
-                            <div class="team-value-icon"><i data-lucide="check-circle-2"></i></div>
-                            <h4>Consultas com Tempo Dedicado</h4>
-                            <p>Escuta atenta e sem pressa para entender sua rotina, histórico clínico e estilo de vida
-                                por completo.</p>
+                            <div class="team-value-icon"><i data-lucide="user-check"></i></div>
+                            <h4>Laura Pereira</h4>
+                            <p><strong>Biomédica & Comercial</strong><br />União do suporte biomédico e gestão do
+                                relacionamento técnico com as clientes.</p>
+                        </div>
+
+                        <div class="team-value-card">
+                            <div class="team-value-icon"><i data-lucide="user-check"></i></div>
+                            <h4>Ana Paula</h4>
+                            <p><strong>Consultora de Vendas</strong><br />Atendimento consultivo e acompanhamento na
+                                seleção de planos e agendamentos.</p>
                         </div>
                     </div>
 
                     <div class="team-action-row">
-                        <a href="https://wa.me/5517996471887?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20equipe%20da%20Clínica%20Revivá."
+                        <a href="https://wa.me/5517997174677?text=Olá,%20gostaria%20de%20falar%20com%20a%20equipe."
                             target="_blank" class="btn btn-primary btn-lg">
                             <i data-lucide="calendar" class="icon-sm"></i>
-                            <span>Agendar com nossa Equipe</span>
+                            <span>Agendar Avaliação com a Equipe</span>
                         </a>
                     </div>
 
@@ -535,152 +390,103 @@
             </div>
         </section>
 
-        <!-- Espaço / Galeria -->
+        <!-- Espaço / Estrutura -->
         <section id="espaco" class="section section-white">
             <div class="container space-grid">
                 <div class="space-text">
-                    <span class="section-tag">Experiência & Hospitalidade Clínica</span>
-                    <h2 class="section-title">Um refúgio de tranquilidade para o seu atendimento.</h2>
-                    <p class="section-desc">
-                        Cada espaço foi desenhado para eliminar a sensação de pressa e transformar sua ida ao médico em
-                        uma experiência aconchegante e segura.
-                    </p>
+                    <span class="section-tag">Nossa Experiência</span>
+                    <h2 class="section-title">Cuidado humanizado do início ao fim.</h2>
+                    <p class="section-desc">Atendimento presencial personalizado, com escuta atenta, protocolos sob
+                        medida e total segurança técnica.</p>
 
                     <div class="space-features">
-
-                        <!-- 1. Espaço Café & Pausa (Xícara de Café / Cerâmica) -->
                         <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-feature">
-                                    <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
-                                    <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-                                    <line x1="6" y1="2" x2="6" y2="4" />
-                                    <line x1="10" y1="2" x2="10" y2="4" />
-                                    <line x1="14" y1="2" x2="14" y2="4" />
-                                </svg>
-                            </div>
+                            <div class="feature-icon"><i data-lucide="heart-handshake" class="icon-feature"></i></div>
                             <div>
-                                <h4>Espaço Café & Pausa</h4>
-                                <p>Chás selecionados e cafés servidos em cerâmicas artesanais exclusivas da clínica.</p>
+                                <h4>Avaliação Individualizada</h4>
+                                <p>Análise detalhada das suas necessidades antes de iniciar qualquer procedimento.</p>
                             </div>
                         </div>
 
-                        <!-- 2. Privacidade e Conforto (Segurança / Discrição) -->
                         <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-feature">
-                                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                                </svg>
-                            </div>
+                            <div class="feature-icon"><i data-lucide="sparkles" class="icon-feature"></i></div>
                             <div>
-                                <h4>Privacidade e Conforto</h4>
-                                <p>Isolamento acústico cuidadoso e agendamentos espaçados para evitar esperas longas.
-                                </p>
+                                <h4>Tecnologia & Acompanhamento</h4>
+                                <p>Equipamentos modernos conduzidos por profissionais especializadas.</p>
                             </div>
                         </div>
-
-                        <!-- 3. Acessibilidade e Estacionamento (Localização / Acesso) -->
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                                    stroke-linecap="round" stroke-linejoin="round" class="icon-feature">
-                                    <path
-                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h4>Acessibilidade e Estacionamento</h4>
-                                <p>Entrada térrea com estacionamento frontal reservado para facilitar seu acesso.</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
-                <div class="space-gallery">
-                    <div class="gallery-col">
-                        <img src="assets/img/lavabo.png" alt="Lavabo e Detalhes da Clínica Revivá" class="gallery-img tall" />
-                        <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=600"
-                            alt="Decoração Biofílica" class="gallery-img square" />
+                <div class="space-gallery space-mosaic">
+                    <!-- Coluna 1 -->
+                    <div class="mosaic-col">
+                        <div class="mosaic-card card-tall">
+                            <img src="assets/img/massagem.png" alt="Atendimento de Massagem" class="mosaic-img" />
+                        </div>
+                        <div class="mosaic-card card-short">
+                            <img src="assets/img/resultados.png" alt="Resultados de Tratamentos" class="mosaic-img" />
+                        </div>
                     </div>
-                    <div class="gallery-col offset">
-                        <!-- FOTO REAL DO ESPAÇO CAFÉ APLICADA AQUI -->
-                        <img src="assets/img/cafe.png" alt="Espaço Café Revivá" class="gallery-img square" />
-                        <img src="assets/img/consultorio.png" alt="Consultório Médico Revivá" class="gallery-img tall" />
-                      
+
+                    <!-- Coluna 2 (Invertida para criar o ritmo alternado) -->
+                    <div class="mosaic-col">
+                        <div class="mosaic-card card-short">
+                            <img src="assets/img/depilacao.png" alt="Depilação a LED" class="mosaic-img" />
+                        </div>
+                        <div class="mosaic-card card-tall">
+                            <img src="assets/img/agulha.png" alt="Procedimentos Estéticos" class="mosaic-img" />
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Accordion -->
-        <!-- FAQ Accordion com Respostas Diretas -->
-        <!-- FAQ Nativo em HTML5 (Sem dependência de JS) -->
-        <!-- FAQ Nativo HTML5 (100% funcional sem JS) -->
+        <!-- FAQ -->
         <section id="faq" class="section section-sand">
             <div class="container max-w-narrow">
                 <div class="section-header text-center">
-                    <span class="section-tag">Esclareça suas dúvidas</span>
+                    <span class="section-tag">Dúvidas Frequentes</span>
                     <h2 class="section-title">Perguntas Frequentes</h2>
                 </div>
 
                 <div class="accordion">
 
-                    <!-- Pergunta 1 -->
                     <details class="accordion-item" name="faq">
                         <summary class="accordion-button">
-                            <span>A clínica atende convênios médicos?</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
-                                <path d="m6 9 6 6 6-6" />
-                            </svg>
+                            <span>A Depilação a LED dói?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
                         </summary>
                         <div class="accordion-panel">
                             <div class="accordion-content">
-                                <p>Nossos atendimentos são particulares com emissão de recibo e relatório para
-                                    reembolso. Para consultar detalhes e orientações sobre o seu plano, <a
-                                        href="https://wa.me/5517996471887" target="_blank" class="faq-link">fale
-                                        diretamente com uma de nossas secretárias</a>.</p>
+                                <p>A depilação a LED utiliza tecnologia desenvolvida para ser indolores e confortável,
+                                    proporcionando aplicação suave na pele.</p>
                             </div>
                         </div>
                     </details>
 
-                    <!-- Pergunta 2 -->
                     <details class="accordion-item" name="faq">
                         <summary class="accordion-button">
-                            <span>O que torna o atendimento integrativo diferente?</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
-                                <path d="m6 9 6 6 6-6" />
-                            </svg>
+                            <span>Como funciona a primeira avaliação?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
                         </summary>
                         <div class="accordion-panel">
                             <div class="accordion-content">
-                                <p>Não tratamos apenas a queixa pontual. Nossas especialistas investigam exames
-                                    laboratoriais, rotina, sono e fatores emocionais para cuidar da sua saúde por
-                                    inteiro e com tempo dedicado de consulta.</p>
+                                <p>Na avaliação presencial, a equipe analisa o histórico da sua pele e seus objetivos
+                                    para desenhar um protocolo individualizado.</p>
                             </div>
                         </div>
                     </details>
 
-                    <!-- Pergunta 3 -->
                     <details class="accordion-item" name="faq">
                         <summary class="accordion-button">
-                            <span>Como faço para agendar uma consulta?</span>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="accordion-icon">
-                                <path d="m6 9 6 6 6-6" />
-                            </svg>
+                            <span>Como agendar uma consulta?</span>
+                            <i data-lucide="chevron-down" class="accordion-icon"></i>
                         </summary>
                         <div class="accordion-panel">
                             <div class="accordion-content">
-                                <p>Basta preencher o formulário abaixo ou clicar no botão do WhatsApp. Nossa equipe de
-                                    recepção entrará em contato rapidamente para agendar o melhor dia e horário para
-                                    você.</p>
+                                <p>Você pode enviar uma mensagem direta via WhatsApp clicando nos botões de agendamento
+                                    no site para confirmar os horários disponíveis.</p>
                             </div>
                         </div>
                     </details>
@@ -689,25 +495,24 @@
             </div>
         </section>
 
-        <!-- Agendamento / Contato Form -->
+        <!-- Formulário de Contato -->
         <section id="contato" class="section section-white">
             <div class="container max-w-form">
                 <div class="contact-box">
 
                     <div class="contact-info">
-                        <span class="section-tag tag-white">Dê o primeiro passo</span>
-                        <h2>Agende sua consulta e priorize sua saúde.</h2>
-                        <p>Envie suas informações ao lado para ser atendido(a) de forma prioritária pela nossa equipe no
-                            WhatsApp.</p>
+                        <span class="section-tag tag-white">Agendamentos</span>
+                        <h2>Entre em contato e agende sua visita.</h2>
+                        <p>Preencha os campos para ser atendido diretamente pela equipe no WhatsApp.</p>
 
                         <div class="contact-details">
                             <div class="contact-line">
-                                <i data-lucide="phone" class="icon-sm"></i>
-                                <span>(17) 3524-6033 • (17) 99647-1887</span>
+                                <i data-lucide="instagram" class="icon-sm"></i>
+                                <span>@clinicadoro_</span>
                             </div>
                             <div class="contact-line">
-                                <i data-lucide="map-pin" class="icon-sm"></i>
-                                <span>Atendimento presencial com total privacidade</span>
+                                <i data-lucide="clock" class="icon-sm"></i>
+                                <span>Atendimento com Hora Marcada</span>
                             </div>
                         </div>
                     </div>
@@ -727,21 +532,19 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="specialty">Especialidade Desejada</label>
+                                <label for="specialty">Serviço de Interesse</label>
                                 <select id="specialty" class="form-control">
-                                    <option value="Endocrinologia">Endocrinologia & Metabologia</option>
-                                    <option value="Dermatologia">Dermatologia</option>
-                                    <option value="Psiquiatria">Psiquiatria & Saúde Mental</option>
-                                    <option value="Hematologia">Hematologia</option>
-                                    <option value="Geriatria">Geriatria & Longevidade</option>
-                                    <option value="Núcleo Alento">Núcleo Alento (Cuidados Paliativos)</option>
-                                    <option value="Orientação Geral">Gostaria de uma orientação inicial</option>
+                                    <option value="Depilação a LED">Depilação a LED</option>
+                                    <option value="Métodos de Emagrecimento">Métodos de Emagrecimento</option>
+                                    <option value="Procedimento Anti Flacidez">Procedimento Anti Flacidez</option>
+                                    <option value="Fisioterapia Dermatofuncional">Fisioterapia Dermatofuncional</option>
+                                    <option value="Outros">Outras informações</option>
                                 </select>
                             </div>
 
                             <button type="submit" class="btn btn-primary btn-full">
                                 <i data-lucide="send" class="icon-sm"></i>
-                                <span>Solicitar no WhatsApp</span>
+                                <span>Enviar no WhatsApp</span>
                             </button>
                         </form>
                     </div>
@@ -751,79 +554,41 @@
         </section>
     </main>
 
-    <!-- Seção Feed do Instagram -->
-    <!-- Seção Instagram / Bastidores -->
-    <!-- Seção Siga a Revivá no Instagram -->
-    <section class="section section-sand border-t border-reviva-petrol/10 text-center">
-        <div class="container">
-            <span class="section-tag">Acompanhe Nosso Conteúdo</span>
-            <h2 class="section-title">Siga a Revivá no Instagram</h2>
-            <p class="section-desc">Dicas de saúde integrativa, rotinas médicas e bastidores da clínica.</p>
-
-            <!-- Wrapper Centralizador Flexbox -->
-            <div class="instagram-center-box">
-                <div class="instagram-frame">
-                    <img src="assets/img/secretarias.jpg" alt="Equipe de Atendimento Revivá" class="instagram-img" />
-                </div>
-            </div>
-
-            <a href="https://www.instagram.com/reviva.clinicamedica/" target="_blank" class="btn btn-outline btn-sm">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    style="width: 16px; height: 16px;">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-                <span>@reviva.clinicamedica no Instagram</span>
-            </a>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <!-- Footer / Rodapé Unificado -->
     <footer class="footer">
         <div class="container footer-content">
 
             <div class="footer-top">
-                <!-- Marca Única: Logo + Tipografia Alinhados -->
                 <a href="#" class="footer-brand" aria-label="Voltar ao topo">
-                    <img src="assets/icons/logo.png" alt="Logo Revivá" class="footer-logo-img" />
+                    <img src="assets/icons/logo.png" alt="Logo Clínica Dorō" class="footer-logo-img" />
                     <div class="footer-brand-text">
-                        <span class="footer-brand-title">REVIVÁ</span>
-                        <span class="footer-brand-subtitle">CLÍNICA MÉDICA</span>
+                        <span class="footer-brand-title">DORŌ</span>
+                        <span class="footer-brand-subtitle">BELEZA QUE LIBERTA</span>
                     </div>
                 </a>
 
-                <!-- Links de Navegação -->
                 <nav class="footer-nav">
-                    <a href="#manifesto">Manifesto</a>
-                    <a href="#especialidades">Especialidades</a>
-                    <a href="#equipe">Corpo Clínico</a>
-                    <a href="#espaco">Espaço</a>
-                    <a href="https://www.instagram.com/reviva.clinicamedica/" target="_blank" class="instagram-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-sm">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                        </svg>
-                        <span>@reviva.clinicamedica</span>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Procedimentos</a>
+                    <a href="#equipe">Equipe</a>
+                    <a href="https://www.instagram.com/clinicadoro_/" target="_blank" class="instagram-link">
+                        <i data-lucide="instagram" class="icon-sm"></i>
+                        <span>@clinicadoro_</span>
                     </a>
                 </nav>
             </div>
 
-            <!-- Linha Inferior com Copyright -->
             <div class="footer-bottom">
-                <p>© 2026 Revivá Clínica Médica. Todos os direitos reservados.</p>
-                <p>Desenvolvido com excelência & design humanizado.</p>
+                <p>© 2026 Clínica Dorō. Todos os direitos reservados.</p>
+                <p>Beleza que liberta.</p>
             </div>
 
         </div>
     </footer>
 
-    <!-- Botão Flutuante com Ícone Oficial do WhatsApp -->
-    <a href="https://wa.me/5517996471887?text=Olá,%20gostaria%20de%20tirar%20uma%20dúvida%20sobre%20a%20Clínica%20Revivá."
-        target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
-        <!-- SVG Oficial WhatsApp -->
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5517997174677?text=Olá,%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank"
+        class="whatsapp-float" aria-label="Falar no WhatsApp">
         <svg viewBox="0 0 24 24" class="whatsapp-svg" fill="#FFFFFF">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -831,7 +596,7 @@
         <span class="notification-dot"></span>
     </a>
 
-    <!-- JavaScript Modular -->
+    <!-- JS Modular -->
     <script src="js/main.js"></script>
 </body>
 
