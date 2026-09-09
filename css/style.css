@@ -331,35 +331,22 @@ section {
 }
 
 @media (max-width: 768px) {
-
-    /* Ajusta a altura e o espaçamento interno do cabeçalho */
     .header-container {
-        height: 72px;
-        gap: 12px;
+        height: 80px;
     }
 
-    /* Reduz levemente o selo do logo no mobile para dar respiro */
     .brand-seal {
-        width: 52px;
-        height: 52px;
-        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
     }
 
-    /* Botão de Agendamento Menor & Delicado no Mobile */
-    .header-actions .btn-primary {
-        padding: 7px 10px;
-        font-size: 0.62rem;
-        letter-spacing: 0.04em;
+    .header.scrolled .header-container {
+        height: 64px;
     }
 
-    /* Reduz o ícone dentro do botão no mobile */
-    .header-actions .btn-primary .icon-sm {
-        width: 13px;
-        height: 13px;
-    }
-
-    .header-actions {
-        gap: 8px;
+    .header.scrolled .brand-seal {
+        width: 46px;
+        height: 46px;
     }
 }
 
@@ -1394,7 +1381,6 @@ details.accordion-item[open] .accordion-icon {
    ========================================================================== */
 
 @media (max-width: 768px) {
-
     /* Aumenta a distância interna do cabeçalho no mobile */
     .header-container {
         height: 72px;
