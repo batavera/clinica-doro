@@ -1479,12 +1479,9 @@ details.accordion-item[open] .accordion-icon {
 
 /* Responsividade: oculta o texto do botão do Instagram em telas médias/menores para não apertar o menu */
 @media (max-width: 992px) {
-    .btn-instagram span {
-        display: none;
-    }
 
+    /* Esconde o botão do Instagram do header no mobile para não poluir o topo */
     .btn-instagram {
-        padding: 10px;
-        border-radius: 50%;
+        display: none !important;
     }
 }
