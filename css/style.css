@@ -181,6 +181,12 @@ section {
     transition: all var(--transition-fast);
 }
 
+.btn-icon-whatsapp {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
 .btn-primary {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -1306,31 +1312,56 @@ details.accordion-item[open] .accordion-icon {
     /* Off-white com boa visibilidade */
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    z-index: 999;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    background: var(--color-whatsapp);
-    color: var(--color-white);
-    display: flex;
+/* ==========================================================================
+   WHATSAPP FLUTUANTE FIXO (DESKTOP & MOBILE)
+   ========================================================================== */
+
+/* ==========================================================================
+   BOTÃO DO WHATSAPP FIXO NO RODAPÉ (NÃO FLUTUANTE)
+   ========================================================================== */
+
+.whatsapp-footer-btn {
+    position: relative;
+    /* Remove o position: fixed */
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    gap: 8px;
+    background-color: var(--color-whatsapp);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     transition: all var(--transition-fast);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
 }
 
-.whatsapp-float:hover {
-    background: var(--color-whatsapp-dark);
-    transform: scale(1.1);
+.whatsapp-footer-btn:hover {
+    background-color: var(--color-whatsapp-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
 }
 
-.whatsapp-svg {
-    width: 32px;
-    height: 32px;
+.whatsapp-footer-btn .whatsapp-svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Ajuste sutil de posição apenas para celulares pequenos não cobrirem textos do rodapé */
+@media (max-width: 640px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-svg {
+        width: 28px;
+        height: 28px;
+    }
 }
 
 .notification-dot {
